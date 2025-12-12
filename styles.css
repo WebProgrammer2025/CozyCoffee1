@@ -1,0 +1,337 @@
+/* General Styles for all pages */
+body {
+    background-image: url("image/coffee.jpg"); 
+    background-size: cover; /* Makes sure the background covers the entire screen */
+    background-repeat: no-repeat; /* Prevent repeating */
+    background-position: center;
+    background-attachment: fixed; /* Prevents the picture moving when page is changed */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    display: inline-block;
+    background-color: lightyellow;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid #ccc;
+    margin: 10px 10px 0 0;
+}
+
+a:hover {
+    background-color: gold;
+}
+
+/* Home Page Styles */
+.home-page .special {
+    border: 10px inset white;
+    background-color: #6F4E37E6;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 750px;
+    height: 350px;
+    margin-left: -375px;
+    margin-top: -175px;
+    color: white;
+    font-size: large;
+    padding: 20px;
+    text-align: center;
+}
+
+.home-page .special p {
+    font-size: 18pt;
+    color: white;
+    padding: 20px;
+    border: 3px outset white;
+    text-align: left;
+}
+.home-page h2 {
+    text-align: left;
+}
+
+.home-page span {
+    color: #ffcc00;
+    font-size: 30pt;
+    font-weight: bold;
+}
+
+/* Menu Page Styles */
+.menu-page .special {
+    position: absolute;
+    top: 50%;               
+    left: 50%;              
+    width: 750px;          
+    max-width: 90%;         
+    margin-left: -375px;    
+    height: auto;           
+    margin-top: -300px;     
+    border: 10px inset white;
+    background-color: #6F4E37E5;
+    color: white;
+    font-size: large;
+    padding: 20px;
+    text-align: left;
+}
+
+.menu-page .highlight {
+    color: #ffcc00;
+}
+
+.menu-page ul {
+    font-size: 18pt;
+    color: white;
+    padding-left: 20px;
+    list-style: none;
+}
+
+.menu-page ul li {
+    margin-bottom: 10px;
+}
+
+.button-container {
+    text-align: center; /* centers everything inside */
+    margin-top: 20px;   /* space above buttons */
+}
+
+/* Login Page Styles */
+.login-page .special {
+    max-width: 380px;
+    margin: 80px auto;
+    padding: 30px;
+    background-color: #FFFFFFE6;
+    border: none;
+    text-align: center;
+}
+
+.login-page h2 span {
+    color: #6b4f4f;
+    font-weight: bold;
+}
+
+.login-page .special form {
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+.login-page .special label,
+.login-page .special input,
+.login-page .special button {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.login-page .special input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.login-page .special button {
+    padding: 10px;
+    background-color: #6b4f4f;
+    color: white;
+    font-size: 16px;
+    border: none;
+    margin-bottom: auto;
+}
+
+.login-page .special button:hover {
+    background-color: #4a3737;
+}
+
+.login-page .special a {
+    color: #6b4f4f;
+    text-decoration: none;
+    border: none;
+    padding: 0;
+    background: none;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.login-page .special a:hover {
+    text-decoration: underline;
+}
+
+/* Button Row for Login + Sign Up */
+.login-page .special .button-row {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center; 
+}
+
+/* "Don't have an account?" text */
+.login-page .special .no-account {
+    display: inline-block; 
+    color: #6b4f4f;
+    font-size: 14px;
+    margin: 0; 
+}
+
+/* Sign Up "button" styled as text */
+.login-page .special .signup-btn {
+    display: inline-block; 
+    background: none; 
+    color: #6b4f4f;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    padding: 0 0 0 5px; 
+    text-decoration: underline; 
+}
+
+.login-page .special .signup-btn:hover {
+    color: #4a3737;
+}
+
+/* Home Page link below */
+.login-page .special a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #6b4f4f;
+    text-decoration: underline;
+}
+
+/* Sign Up Page Styles */
+.signup-page .special {
+    max-width: 380px;
+    margin: 80px auto;
+    padding: 30px;
+    background-color: #FFFFFFE6; 
+    border: none;
+    text-align: center;
+}
+
+.signup-page h2 span {
+    color: #6b4f4f;
+    font-weight: bold;
+}
+
+.signup-page .special form {
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+.signup-page .special label,
+.signup-page .special input {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.signup-page .special input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+/* Use same button style as login button */
+.signup-page .special .login-btn {
+    padding: 10px;
+    background-color: #6b4f4f;
+    color: white;
+    font-size: 16px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+.signup-page .special .login-btn:hover {
+    background-color: #4a3737;
+}
+
+.signup-page .special a.login-btn {
+    font-weight: normal;
+    width: 95%;
+}
+
+/* Checkout Page Styles */
+.checkout-page .special {
+    position: absolute;
+    top: 50%;               
+    left: 50%;             
+    width: 750px;           
+    max-width: 90%;         
+    margin-left: -375px;    
+    height: auto;           
+    margin-top: -300px;     
+    border: 10px inset white;
+    background-color: #6F4E37E5;
+    color: white;
+    font-size: large;
+    padding: 20px;
+    text-align: center;
+}
+
+.checkout-page h2 {
+    margin-top: 0;
+    font-size: 28pt;
+    text-align: left;
+}
+
+.checkout-page h2 span {
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+/* Cart items */
+.checkout-page ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    font-size: 16pt;
+    text-align: left;
+}
+
+.checkout-page ul li {
+    background-color: #FFFFFF; 
+    color: black;               
+    padding: 10px;
+    margin-bottom: 10px;
+    position: relative; 
+}
+
+/* Delete button floated right */
+.checkout-page ul li button {
+    float: right; 
+    background-color: #6b4f4f; 
+    color: white; 
+    border: none;
+    padding: 5px 10px;
+    font-size: 14pt;
+}
+
+.checkout-page ul li button:hover {
+    background-color: #4a3737; 
+}
+
+/* Total section */
+.checkout-page h3 {
+    font-size: 22pt;
+    color: #ffcc00;
+    margin-top: 20px;
+}
+
+/* Links */
+.checkout-page a {
+    display: inline-block;
+    margin: 15px 10px 0 0;
+    color: black; 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.checkout-page a:hover {
+    text-decoration: none;
+}
